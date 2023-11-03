@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
 import time
+import ctypes
 
 from pylibftdi import Device, Driver, INTERFACE_B
+
+ctypes.CDLL('libftdi.so.1.20.0', mode=ctypes.RTLD_GLOBAL)
 
 if __name__ == "__main__":
     with Device(mode="b", interface_select=INTERFACE_B) as dev:
