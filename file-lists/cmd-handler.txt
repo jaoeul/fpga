@@ -1,0 +1,4 @@
+src/uart_rx.v
+src/uart_tx.v
+src/cmd_handler.v
+src/cmd_handler_tb.v

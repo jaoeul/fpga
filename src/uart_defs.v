@@ -1,0 +1,3 @@
+`define SYSTEM_CLOCK      12_000_000
+`define BAUD_RATE         115_200
+`define UART_BIT_DURATION (`SYSTEM_CLOCK / `BAUD_RATE)
